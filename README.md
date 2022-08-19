@@ -25,3 +25,13 @@ Expected Outcome:
 2 = 3
 3 = 3
 
+describe numberReplacer()
+
+Test 1: It will replace the number 1 with boop
+Code:
+  const input = "1"
+  numberReplacer()
+Expected Outcome:
+boop
+
+idk what im doing

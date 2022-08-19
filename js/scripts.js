@@ -17,3 +17,8 @@ console.log(numberCount1)
 console.log(numberCount2)
 console.log(numberCount3)
 }
+
+function numberReplacer(input) {
+  const inputArray = input.split("");
+  
+}
