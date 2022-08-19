@@ -1,16 +1,16 @@
   Describe numberFinder()
 Test 1: It will find if 1 and return true or false"
 Code:
-  const input = "1"
+  const input = "1";
   numberFinder(input);
 Expected Outcome:
 true
 
 Test 2: It will find 1 in any length of number inputted."
 Code:
-  const input = "45516"
+  const input = "45516";
   numberFinder(input);
-  const input = "455116"
+  const input = "455116";
   numberFinder(input);
 Expected Outcome:
 1
@@ -18,7 +18,7 @@ Expected Outcome:
 
 Test 3: It will find numbers 1 2 or 3 and return the count of how many times they appear in the string.
 Code: 
-  const input = "123123123"
+  const input = "123123123";
   numberFinder(input);
 Expected Outcome: 
 1 = 3
@@ -56,7 +56,7 @@ Expected Outcome:
 
 Test 3: "It will change the number 3 and return "Wont you be my neighbor?"
   const input = 2;
-  numberReplacer(input):
+  numberReplacer(input);
 Expected Outcome:
 "Wont you be my neighbor?"
 
@@ -69,6 +69,12 @@ Expected Outcome: "Won't you be my neighbor?"
 
 Test 2: "It should recognize the number 2 in a multiple number string and still return the output "boop"
 Code:
-  const input = "27"
+  const input = "27";
   includesNumbers(input);
-Expected Outcome:
+Expected Outcome: "Boop"
+
+Test 3: "It should recognize the number 1 in a multiple number string and still return the output "Beep"
+Code:
+  const input = "17";
+  includesNumbers(input);
+Expected Outcome: "Beep"

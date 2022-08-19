@@ -42,6 +42,10 @@ if (input.includes("3")){
   outcomeArray.push("Won't you be my neighor?")
 } else if (input.includes("2")){
   outcomeArray.push("Boop")
-} 
+} else if (input.includes("1")){
+  outcomeArray.push("Beep")
+} else {
+  outcomeArray.push(input + "");
+}
 return outcomeArray;
 }
