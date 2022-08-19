@@ -26,14 +26,21 @@ Expected Outcome:
 3 = 3
 
 describe inputArray()
-Test: "It should produce a string containing the every whole number between 0 and input."
+Test 1: "It should produce a string containing the every whole number between 0 and input."
 Code:
   const input = 5;
   inputArray(input);
 Expected Outcome: [0,1,2,3,4,5]
 
-Test: "It should convert a number array into a string array."
+Test 2: "It should convert a number array into a string array."
 Code: 
 const input = 5;
 inputArray(input);
 Expected Outcome : ["0","1","2","3","4","5"]
+
+describe numberReplacer()
+Test 1: "It should change the number 1 and return beep."
+Code:
+  const input = 1;
+  numberReplacer(input);
+Expected Outcome: "beep"

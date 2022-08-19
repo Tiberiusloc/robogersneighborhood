@@ -26,3 +26,9 @@ function inputArray(input) {
   const stringArray = array.toString().split(",");
   return stringArray
 }
+function numberReplacer(input) {
+  if (input === 1) {
+    return "beep";
+  }
+  return false
+}
