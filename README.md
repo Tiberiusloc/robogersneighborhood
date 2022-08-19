@@ -59,3 +59,5 @@ Test 3: "It will change the number 3 and return "Wont you be my neighbor?"
   numberReplacer(input):
 Expected Outcome:
 "Wont you be my neighbor?"
+
+describe includesNumbers()
