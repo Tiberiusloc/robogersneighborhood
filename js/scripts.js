@@ -6,7 +6,7 @@ function numberFinder(input)
   let numberCount2 = 0;
   let numberCount3 = 0;
   inputArray.forEach(function(element) {
-    if (element === "1") {
+    if (inputArray.indexOf() === "1") {
     numberCount1++;
   } else if (element === "2") {
     numberCount2++;
@@ -14,6 +14,7 @@ function numberFinder(input)
     numberCount3++;
   }
 }) 
+console.log(inputArray.indexOf("1"))
 console.log(numberCount1)
 console.log(numberCount2)
 console.log(numberCount3)
