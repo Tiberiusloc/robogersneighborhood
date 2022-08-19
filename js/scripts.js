@@ -1,8 +1,10 @@
 function numberFinder(input){
   const inputArray = input.split("");
   console.log(inputArray)
-  if (inputArray === 1) {
-  return true
-} 
-return false
+  let numberCount = 0;
+  inputArray.forEach(function(element) {
+    if (element === "1")
+    numberCount++;
+  }
+  console.log(numberCount);
 }
