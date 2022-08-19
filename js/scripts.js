@@ -1,3 +1,5 @@
+//Business Logic
+
 const array = [];
 function inputArray(input) {
   const array = [];
@@ -15,6 +17,10 @@ function mrRoboger(input) {
       outcomeArray.push("Won't you be my neighbor?");
     } else if (element.includes("2")) {
       outcomeArray.push("Boop!");
+    } else if (element.includes("1")) {
+      outcomeArray.push("Beep!")
+    } else {
+      outcomeArray.push(element)
     }
   });
   return outcomeArray
