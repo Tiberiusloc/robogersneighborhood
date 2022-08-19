@@ -66,3 +66,9 @@ Code:
   const input = "39";
   includesNumbers(input);
 Expected Outcome: "Won't you be my neighbor?"
+
+Test 2: "It should recognize the number 2 in a multiple number string and still return the output "boop"
+Code:
+  const input = "27"
+  includesNumbers(input);
+Expected Outcome:

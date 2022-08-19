@@ -7,7 +7,7 @@ function numberFinder(input)
   let numberCount3 = 0;
   inputArray.forEach(function(element) {
     if (element === "1") {
-    return "beep"
+    return "Beep"
   } else if (element === "2") {
     numberCount2++;
   } else if (element === "3") 
@@ -28,9 +28,9 @@ function inputArray(input) {
 }
 function numberReplacer(input) {
   if (input === 1) {
-    return "beep";
+    return "Beep";
   } else if (input === 2) {
-  return "boop"
+  return "Boop"
   } else if (input === 3) {
     return "Won't you be my neighbor?"
   }
@@ -40,5 +40,8 @@ function includesNumbers(input){
 const outcomeArray = [];
 if (input.includes("3")){
   outcomeArray.push("Won't you be my neighor?")
-} return outcomeArray;
+} else if (input.includes("2")){
+  outcomeArray.push("Boop")
+} 
+return outcomeArray;
 }
