@@ -25,13 +25,15 @@ Expected Outcome:
 2 = 3
 3 = 3
 
-describe numberReplacer()
-
-Test 1: It will replace the number 1 with boop
+describe inputArray()
+Test: "It should produce a string containing the every whole number between 0 and input."
 Code:
-  const input = "1"
-  numberReplacer()
-Expected Outcome:
-boop
+  const input = 5;
+  inputArray(input);
+Expected Outcome: [0,1,2,3,4,5]
 
-idk what im doing
+Test: "It should convert a number array into a string array."
+Code: 
+const input = 5;
+inputArray(input);
+Expected Outcome : ["0","1","2","3","4","5"]

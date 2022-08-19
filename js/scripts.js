@@ -7,7 +7,7 @@ function numberFinder(input)
   let numberCount3 = 0;
   inputArray.forEach(function(element) {
     if (element === "1") {
-    numberCount1++;
+    return "beep"
   } else if (element === "2") {
     numberCount2++;
   } else if (element === "3") 
@@ -17,8 +17,12 @@ console.log(numberCount1)
 console.log(numberCount2)
 console.log(numberCount3)
 }
-
-function numberReplacer(input) {
-  const inputArray = input.split("");
-  
+const outcomeArray = [];
+function inputArray(input) {
+  const array = [];
+  for (i = 0; i <= input; i++) {
+    array.push(i);
+  }
+  const stringArray = array.toString().split(",");
+  return stringArray
 }
