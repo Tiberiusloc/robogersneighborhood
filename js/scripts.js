@@ -13,6 +13,8 @@ function mrRoboger(input) {
   stringArray.forEach(function(element) {
     if (element.includes("3")) {
       outcomeArray.push("Won't you be my neighbor?");
+    } else if (element.includes("2")) {
+      outcomeArray.push("Boop!");
     }
   });
   return outcomeArray

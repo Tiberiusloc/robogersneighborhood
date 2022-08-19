@@ -81,7 +81,12 @@ Expected Outcome: "Beep"
 
 Describe mrRoboger()
 
-Test 1: "It should take the value and run it up to that number and push out the outcomeArray."
+Test 1: "It should take the value of any instance of 3 and run it up to that number and push out the outcomeArray."
   const input = "39";
+  mrRoboger(input);
+Expected result: ["Won't you be my neighbor? "];
+
+Test 1: "It should take the value of any instance of 2 and run it up to that number and push out the outcomeArray."
+  const input = "22";
   mrRoboger(input);
 Expected result: ["Boop! "];
