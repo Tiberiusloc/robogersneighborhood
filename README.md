@@ -15,3 +15,12 @@ Code:
 Expected Outcome:
 1
 2
+
+Test 3: It will find numbers 1 2 or 3 and return the count of how many times they appear in the string.
+Code: 
+  const input = "123123123"
+  numberFinder(input);
+Expected Outcome: 
+1 = 3
+2 = 3
+3 = 3
