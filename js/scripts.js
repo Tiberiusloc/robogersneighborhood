@@ -66,3 +66,21 @@ if (input.includes("3")){
 }
 return outcomeArray;
 }
+
+//UI Logic
+document.reload(function(){
+  ("submit").submit(function(event){
+    event.preventDefault
+    const input = ("#input").value();
+    const output = [];
+    mrRoboger(input).forEach(function(element){
+      output.push(element + " ");
+      ("#output").append("<p>" + output.toString().split(",").pop() + "<p>");
+    })
+    ("#submit").hide();
+    ("#.hidden").toggleClass();
+    ("#reset").show();
+    ("#userInput").append(input);
+
+  })
+})

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>Mr. Roboger's Neighborhood</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Welcome to My Mr. Roboger's Project!</h1>
+    </div>
+    <div class="content">
+      <form id="form">
+        <p>Put a number and Mr. Roboger will count from zero to your number in his interesting dialect!</p>
+        <input id="input" type="number" min="0" required>
+        <button type="submit" class="btn">Submit!</button>
+      </form>
+      <button id="reset" onClick="window.location.reload();" class="btn">Go again!</button>
+      <div class="row">
+        <div class="hidden" id="user" class="col-3">
+          <h2>You said:</h2>
+          <p><span id="userInput"></span></p>
+        </div>
+        <div class="hidden" id="roboger" class="col-3">
+          <h2>Mr. Roboger said:</h2>
+          <p><span id="output"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
