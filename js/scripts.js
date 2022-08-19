@@ -36,3 +36,9 @@ function numberReplacer(input) {
   }
   return false
 }
+function includesNumbers(input){
+const outcomeArray = [];
+if (input.includes("3")){
+  outcomeArray.push("Won't you be my neighor?")
+} return outcomeArray;
+}

@@ -61,3 +61,8 @@ Expected Outcome:
 "Wont you be my neighbor?"
 
 describe includesNumbers()
+Test 1: "It should recognize the number 3 in a multiple number string and still return the output "wont you be my neighbor?"
+Code: 
+  const input = "39";
+  includesNumbers(input);
+Expected Outcome: "Won't you be my neighbor?"
