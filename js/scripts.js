@@ -31,6 +31,8 @@ function numberReplacer(input) {
     return "beep";
   } else if (input === 2) {
   return "boop"
+  } else if (input === 3) {
+    return "Won't you be my neighbor?"
   }
   return false
 }

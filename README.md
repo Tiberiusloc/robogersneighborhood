@@ -53,3 +53,9 @@ Code:
   numberReplacer(input);
 Expected Outcome:
 "boop"
+
+Test 3: "It will change the number 3 and return "Wont you be my neighbor?"
+  const input = 2;
+  numberReplacer(input):
+Expected Outcome:
+"Wont you be my neighbor?"
