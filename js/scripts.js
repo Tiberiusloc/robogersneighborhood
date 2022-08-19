@@ -6,15 +6,13 @@ function numberFinder(input)
   let numberCount2 = 0;
   let numberCount3 = 0;
   inputArray.forEach(function(element) {
-    if (inputArray.indexOf() === "1") {
+    if (element === "1") {
     numberCount1++;
   } else if (element === "2") {
     numberCount2++;
-  } else if (element === "3") {
+  } else if (element === "3") 
     numberCount3++;
-  }
 }) 
-console.log(inputArray.indexOf("1"))
 console.log(numberCount1)
 console.log(numberCount2)
 console.log(numberCount3)

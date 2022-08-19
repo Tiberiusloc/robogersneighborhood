@@ -25,8 +25,3 @@ Expected Outcome:
 2 = 3
 3 = 3
 
-Test 4: It will find numbers 1 2 3 regardless of starting number.
-Code: 
-  const: "123457891011121314"
-  numberFinder(input);
-Expected Outcome:
