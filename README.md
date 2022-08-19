@@ -78,3 +78,10 @@ Code:
   const input = "17";
   includesNumbers(input);
 Expected Outcome: "Beep"
+
+Describe mrRoboger()
+
+Test 1: "It should take the value and run it up to that number and push out the outcomeArray."
+  const input = "39";
+  mrRoboger(input);
+Expected result: ["Boop! "];

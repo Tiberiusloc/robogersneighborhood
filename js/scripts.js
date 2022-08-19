@@ -1,5 +1,23 @@
-function numberFinder(input)
-{
+const array = [];
+function inputArray(input) {
+  const array = [];
+  for (i = 0; i <= input; i++) {
+    array.push(i);
+  }
+  const stringArray = array.toString().split(",");
+  return stringArray;
+}
+const outcomeArray = [];
+function mrRoboger(input) {
+  const stringArray = inputArray(input);
+  stringArray.forEach(function(element) {
+    if (element.includes("3")) {
+      outcomeArray.push("Won't you be my neighbor?");
+    }
+  });
+  return outcomeArray
+}
+function numberFinder(input){
   const inputArray = input.split("");
   console.log(inputArray)
   let numberCount1 = 0;
@@ -16,15 +34,6 @@ function numberFinder(input)
 console.log(numberCount1)
 console.log(numberCount2)
 console.log(numberCount3)
-}
-const outcomeArray = [];
-function inputArray(input) {
-  const array = [];
-  for (i = 0; i <= input; i++) {
-    array.push(i);
-  }
-  const stringArray = array.toString().split(",");
-  return stringArray
 }
 function numberReplacer(input) {
   if (input === 1) {
