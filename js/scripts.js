@@ -68,19 +68,17 @@ return outcomeArray;
 }
 
 //UI Logic
-document.reload(function(){
-  ("submit").submit(function(event){
-    event.preventDefault
-    const input = ("#input").value();
+window.onload = function() {
+  const form = document.querySelector("#form");
+  form.onsubmit = function(event) {
+    event.preventDefault();
+    const input = parseInt(document.getElementById("input#input"));
+    console.log(input)
     const output = [];
     mrRoboger(input).forEach(function(element){
       output.push(element + " ");
-      ("#output").append("<p>" + output.toString().split(",").pop() + "<p>");
+      document.getElementById("output").append(output.toString().split(",").pop())
+      console.log(output)
     })
-    ("#submit").hide();
-    ("#.hidden").toggleClass();
-    ("#reset").show();
-    ("#userInput").append(input);
-
-  })
-})
+  }
+}
