@@ -29,6 +29,8 @@ function inputArray(input) {
 function numberReplacer(input) {
   if (input === 1) {
     return "beep";
+  } else if (input === 2) {
+  return "boop"
   }
   return false
 }
