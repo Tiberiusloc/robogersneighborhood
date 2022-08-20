@@ -14,18 +14,20 @@
     <div class="content">
       <form id="form">
         <p>Put a number and Mr. Roboger will count from zero to your number in his interesting dialect!</p>
-        <input id="input" type="number" min="0">
-        <button type="submit" class="btn">Submit!</button>
+        <label for="userInput">Choose a number</label>
+        <br>
+        <input id="user-Input" type="number" name="user-Input">
+        <button type="submit" id="submitButton" class="btn">Submit!</button>
       </form>
-      <button id="reset" onClick="window.location.reload();" class="btn">Go again!</button>
+      <button type="button" id="reset" onClick="window.location.reload();" class="btn">Go again!</button>
       <div class="row">
-        <div class="hidden" id="user" class="col-3">
+        <div class="hidden" id="user" class="col-4">
           <h2>You said:</h2>
-          <p><span id="userInput"></span></p>
+          <p><span id="result"></span></p>
         </div>
-        <div class="hidden" id="roboger" class="col-3">
+        <div class="hidden" id="roboger" class="col-4">
           <h2>Mr. Roboger said:</h2>
-          <p><span id="output"></span></p>
+          <p><span id="roboresult"></span></p>
         </div>
       </div>
     </div>

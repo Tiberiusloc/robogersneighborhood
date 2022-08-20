@@ -2,7 +2,6 @@
 
 const array = [];
 function inputArray(input) {
-  const array = [];
   for (i = 0; i <= input; i++) {
     array.push(i);
   }
@@ -68,17 +67,24 @@ return outcomeArray;
 }
 
 //UI Logic
-window.onload = function() {
-  const form = document.querySelector("#form");
-  form.onsubmit = function(event) {
-    event.preventDefault();
-    const input = parseInt(document.getElementById("input#input"));
-    console.log(input)
-    const output = [];
-    mrRoboger(input).forEach(function(element){
-      output.push(element + " ");
-      document.getElementById("output").append(output.toString().split(",").pop())
-      console.log(output)
-    })
-  }
+window.addEventListener("load", function(){
+  const submitButton = document.getElementById("submitButton");
+  submitButton.addEventListener("click", handleSubmission);
+});
+
+function handleSubmission(event){
+  event.preventDefault();
+  const userInput = document.getElementById("user-Input").value;
+  const checkArray = inputArray(userInput);
+  const resultArray = mrRoboger(checkArray).join("... ");
+  const paragraphUser = document.getElementById("result");
+  const paragraph = document.getElementById("roboresult");
+  let userhide = document.getElementById("user");
+  let robohide = document.getElementById("roboger");
+  userhide.removeAttribute("class","hidden");
+  robohide.removeAttribute("class","hidden");
+  console.log(robohide)
+console.log(userhide)
+  paragraph.append(resultArray);
+  paragraphUser.append(userInput);
 }
