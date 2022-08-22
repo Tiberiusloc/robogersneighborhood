@@ -33,7 +33,9 @@ _This application is created with Test Driven Development. The website will outp
 * Enter a number into the user input and click the submit button.
 
 ## Tests
-~~~Describe numberFinder()
+<detail>
+<summary>Show Tests</summary>
+Describe numberFinder()
 
 Test 1: It will find if 1 and return true or false"
 
@@ -84,9 +86,9 @@ Expected Outcome:
 2 = 3
 
 3 = 3
-~~~
+
   
-~~~
+
 describe inputArray()
 
   
@@ -112,9 +114,9 @@ const input = 5;
 inputArray(input);
 
 Expected Outcome : ["0","1","2","3","4","5"]
-~~~
+
   
-~~~
+
 describe numberReplacer()
 
   
@@ -154,9 +156,9 @@ numberReplacer(input);
 Expected Outcome:
 
 "Wont you be my neighbor?"
-~~~
+
   
-~~~
+
 describe includesNumbers()
 
 Test 1: "It should recognize the number 3 in a multiple number string and still return the output "wont you be my neighbor?"
@@ -192,9 +194,9 @@ const input = "17";
 includesNumbers(input);
 
 Expected Outcome: "Beep"
-~~~
+
   
-~~~
+
 Describe mrRoboger()
 
   
@@ -230,8 +232,8 @@ mrRoboger(input)
 const input2 = "18"
 
 Expected Outcome: ["Beep! "]
-~~~
 
+</detail>
 ## Known Bugs
 
 
