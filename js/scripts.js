@@ -1,17 +1,18 @@
 //Business Logic
 
-const array = [];
 function inputArray(input) {
+  const array = [];
   for (i = 0; i <= input; i++) {
     array.push(i);
   }
   const stringArray = array.toString().split(",");
+  console.log(stringArray + "stringarray")
   return stringArray;
 }
-const outcomeArray = [];
-function mrRoboger(input) {
-  const stringArray = inputArray(input);
-  stringArray.forEach(function(element) {
+
+function mrRoboger(inputArray) {
+  const outcomeArray = [];
+  inputArray.forEach(function(element) {
     if (element.includes("3")) {
       outcomeArray.push("Won't you be my neighbor?");
     } else if (element.includes("2")) {
@@ -34,7 +35,7 @@ function handleSubmission(event){
   const checkArray = inputArray(userInput);
   const resultArray = mrRoboger(checkArray).join("... ");
   const paragraphUser = document.getElementById("result");
-  const paragraph = document.getElementById("roboresult");
+  const paragraph = document.getElementById("roboresult")
   let hideButton = document.getElementById("submitButton");
   let userhide = document.getElementById("user");
   let robohide = document.getElementById("roboger");
@@ -42,14 +43,13 @@ function handleSubmission(event){
   userhide.removeAttribute("class","hidden");
   robohide.removeAttribute("class","hidden");
   hideButton.setAttribute('class', 'hidden');
-  resetHide.removeAttribute('class', 'hidden')
-  paragraph.append(resultArray);
-  paragraphUser.append(userInput);
+  resetHide.removeAttribute("class", "hidden")
   const form = document.getElementById("form");
+  paragraphUser.innerHTML = (userInput);
+  paragraph.innerText = (resultArray);
   form.reset();
-  console.log(userInput + "This is user input")
-  console.log(checkArray + "This is check array")
-  console.log(resultArray + "This is result array")
+  console.log(checkArray)
+  console.log(resultArray)
 }
 window.addEventListener("load", function(){
   const submitButton = document.getElementById("submitButton");
